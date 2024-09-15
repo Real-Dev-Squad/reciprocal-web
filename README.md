@@ -20,6 +20,8 @@ npm install
 npm run dev
 ```
 
+3. Open [http://localhost:4000](http://localhost:4000) with your browser.
+
 ## Creating production build
 
 To create a production build:
@@ -32,4 +34,18 @@ Preview the built app:
 
 ```sh
 npm run preview
+```
+
+## Testing
+
+To run test in watch mode use the command below:
+
+```sh
+npm run test
+```
+
+To generate coverage report use the command below:
+
+```sh
+npm run test:coverage
 ```
