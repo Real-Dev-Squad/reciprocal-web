@@ -1,4 +1,5 @@
-# Reciprocal web test
+# Reciprocal web
+Frontend app of reciprocal built using remix.
 
 ### Prerequisites
 
