@@ -1,4 +1,4 @@
-# Reciprocal frontend
+# Reciprocal web
 
 ### Prerequisites
 - [Volta](https://volta.sh/) - to manage node versions
