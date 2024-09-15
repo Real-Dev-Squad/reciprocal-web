@@ -20,6 +20,8 @@ npm install
 npm run dev
 ```
 
+3. Open [http://localhost:4000](http://localhost:4000) with your browser.
+
 ## Creating production build
 
 To create a production build:
