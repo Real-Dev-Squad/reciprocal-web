@@ -10,7 +10,8 @@
     "preview": "vite preview --port 4000",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint ."
   },

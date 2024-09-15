@@ -41,7 +41,7 @@ npm run preview
 To run test in watch mode use the command below:
 
 ```sh
-npm run test
+npm run test:watch
 ```
 
 To generate coverage report use the command below:
