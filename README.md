@@ -2,8 +2,8 @@
 
 ### Prerequisites
 - [Volta](https://volta.sh/) - to manage node versions
-- [Node.js](https://nodejs.org/en/) - JavaScript runtime
-- [npm](https://www.npmjs.com/) - package manager
+- [Node.js - 20.17.0](https://nodejs.org/en/) - JavaScript runtime
+- [npm - 10.8.2](https://www.npmjs.com/) - package manager
 
 ## Setup development environment
 1. Install dependencies
