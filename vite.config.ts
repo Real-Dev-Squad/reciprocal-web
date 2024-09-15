@@ -23,6 +23,10 @@ export default defineConfig({
     setupFiles: ["./vitest.setup.ts"],
     env: loadEnv("test", process.cwd(), ""),
     include: ["./app/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-    exclude: [".*\\/node_modules\\/.*", ".*\\/build\\/.*", ".*\\/postgres-data\\/.*"],
+    exclude: [".*\\/node_modules\\/.*", ".*\\/build\\/.*", ".*\\/postgres-data\\/.*", ".*\\/public\\/.*"],
+    coverage: {
+      include: ["app/**"],
+      exclude: ["app/root.tsx", "app/entry.client.tsx", "app/entry.server.tsx", "app/routes/**"],
+    },
   },
 })
