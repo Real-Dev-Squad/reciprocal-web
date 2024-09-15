@@ -33,3 +33,17 @@ Preview the built app:
 ```sh
 npm run preview
 ```
+
+## Testing
+
+To run test in watch mode use the command below:
+
+```sh
+npm run test
+```
+
+To generate coverage report use the command below:
+
+```sh
+npm run test:coverage
+```
