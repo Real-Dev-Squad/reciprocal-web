@@ -14,6 +14,34 @@ module.exports = {
       jsx: true,
     },
   },
+  plugins: ["import"],
+  rules: {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-non-null-assertion": "warn",
+    "import/order": [
+      "error",
+      {
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+        "newlines-between": "always",
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
+        pathGroups: [
+          {
+            pattern: "react",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "@/*",
+            group: "internal",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["builtin", "@/*"],
+      },
+    ],
+  },
   env: {
     browser: true,
     commonjs: true,
@@ -66,11 +94,7 @@ module.exports = {
           },
         },
       },
-      extends: [
-        "plugin:@typescript-eslint/recommended",
-        "plugin:import/recommended",
-        "plugin:import/typescript",
-      ],
+      extends: ["plugin:@typescript-eslint/recommended", "plugin:import/recommended", "plugin:import/typescript"],
     },
 
     // Node
@@ -81,4 +105,4 @@ module.exports = {
       },
     },
   ],
-};
+}
