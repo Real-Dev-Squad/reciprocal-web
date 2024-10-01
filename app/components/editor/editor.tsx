@@ -1,3 +1,5 @@
+import { cn } from "~/utils/classnames.util"
+
 import { BlockTypeEnum } from "./editor.enum"
 import { useEditorStore } from "./editor.store"
 import { TBlock } from "./editor.types"
@@ -22,7 +24,7 @@ const AddDefaultPageButton = () => {
         children: [],
         parentId: parentId,
         type: BlockTypeEnum.TEXT,
-        content: "Welcome to Reciprocal",
+        content: "",
       },
     ])
   }
@@ -46,7 +48,17 @@ const Block = ({ content, type }: TBlock) => {
     )
   }
 
-  return <div className="" contentEditable></div>
+  return (
+    <div
+      contentEditable
+      data-placeholder="Type something..."
+      className={cn(
+        "caret:text-stone-900 relative mb-2 cursor-text whitespace-pre-wrap break-words text-base text-stone-900 outline-none",
+        "before:absolute before:text-stone-400 before:content-[attr(data-placeholder)]",
+        "before:hidden focus:empty:before:block",
+      )}
+    ></div>
+  )
 }
 
 export const Editor = () => {
